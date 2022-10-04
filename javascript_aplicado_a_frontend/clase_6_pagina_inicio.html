@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Quicksand:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background: coral;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 26px;
+            place-content: center;
+        }
+
+        .product-card {
+            width: 240px;
+        }
+
+        .product-card img{
+            width: 240px;
+            height: 240px;
+            border-radius: 30px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 16px;
+        }
+
+        .product-info figure {
+            margin:0;
+        }
+
+        .product-info figure img {
+            width: 40px;
+            height: 40px
+        }
+
+        .product-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+
+        .product-info div p:nth-child(2) {
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--very-light-pink)
+        }
+
+        @media (max-width: 640px) {
+            .cards-container {
+            grid-template-columns: repeat(auto-fill, 140px);
+        } 
+            .product-card {
+            width: 140px;
+        }
+            .product-card img{
+            width: 140px;
+            height: 140px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/155161126/es/foto/rosa-hortensia-en-amarillo-taza-aislado-en-blanco.webp?s=612x612&w=is&k=20&c=AR7iiutVLqiE5A_ufzrDfxIpnQlbeLH676vdvGIzIdk=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/517676530/es/foto/hortensia-rosa-flores.webp?s=612x612&w=is&k=20&c=tliRdRC2JJNPxoiXF48fQRLkamkVD79tQfsQM__TlIg=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/641136304/es/foto/hortensia.webp?s=612x612&w=is&k=20&c=vjbWi7hrXIuRdl5ccK5xAerSUJqrDuIuaVbPAv-L7Uw=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/509343262/es/foto/rojo-glox%C3%ADnea-en-una-olla-en-blanco.webp?s=612x612&w=is&k=20&c=Sm3t0DgpdjKjldVyJkdd3z7SUrjiml6cm8p2otbGsBE=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1397686772/es/foto/hermosa-planta-de-hortensia-en-maceta-con-flores-rosadas-aisladas-sobre-blanco.webp?s=612x612&w=is&k=20&c=7CLZ1rdreaEXYfrduayibKJ-BA39QWE0E1jcvdalEUc=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1203019162/es/foto/flor-de-onagra-rosa-aislada-en-una-maceta.webp?s=612x612&w=is&k=20&c=LLbuFA-ckNpHKvwiJ0wWt-XFv1k2wfkY271i1BStjkA=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/538675036/es/foto/peque%C3%B1a-planta-con-origen-y-suelo.webp?s=612x612&w=is&k=20&c=kfolPTJTMBPvUcJUK7ot5JSBxy2IASMtTlSgPWpwz74=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/820929244/es/foto/hortensia-en-jarra.webp?s=612x612&w=is&k=20&c=hZDF0vakFj8W0Du1PgJrkj4kZWTw-2LeDhF9DClc6Pc=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/177265904/es/foto/primavera.webp?s=612x612&w=is&k=20&c=5HvK3sbEz_x0-mr0H7HKsXD21rbCBA6mewgvWWYGB4E=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/522527808/es/foto/hortensia-rosa-flores.webp?s=612x612&w=is&k=20&c=5JHYxqDhQGwRL-Vkr_VjCSRfdRAJqS9rUigXbnNHXDw=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/183782916/es/foto/primula-vulgaris.webp?s=612x612&w=is&k=20&c=FH1AYw_psjQQ8AiRikWLMvmLnUcVcPtokh-c8HpNDsw=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/177251231/es/foto/primroses.webp?s=612x612&w=is&k=20&c=_B0C_wRTLdkDbLFVtz6ZmOEDfge2fbpCftY_Ewb30Q8=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/183020847/es/foto/hortensja-en-cuba.webp?s=612x612&w=is&k=20&c=nD5XDQgeru6KO-KBjQ2P-DC7onBDGUqO3Hz8egbUoEc=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1307214640/es/foto/colorido-rosa-y-amarillovariado-en-maceta-primrose-o-primula.webp?s=612x612&w=is&k=20&c=HcsB1q7Z6RfdP-ml69xGC9_jlYx0YBjl40ayXoAaCxs=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/1382912783/es/foto/bloomig-primula-acaulis-scentsation-onagra.webp?s=612x612&w=is&k=20&c=i7fXyzJ7COQgf5hTiRT48YVAfAvcYRqSKHW3x5yWPVc=" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$120,00</p>
+                        <p>flor-hermosa</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+    </section>
+</body>
+
+</html>
